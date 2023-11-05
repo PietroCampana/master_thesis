@@ -1,0 +1,80 @@
+\chapter*{Introduction}
+
+The Standard Model of particle physics predicts the existence of left-handed neutrinos, which are part of
+electroweak doublets alongside charged leptons. Neutrinos are unique in that they carry zero electric charge and lack
+color charge, only interacting through the weak force. Notably, the Standard Model does not include right-handed neutrino components, which leads to the prediction that their left-handed counterparts should be massless.
+Neutrinos come in three distinct flavors, associated with the electron, muon, and tau charged leptons in their
+respective doublets. These flavor neutrinos can be observed when they are produced alongside or from specific charged
+leptons, and can be identified with the interaction states.
+
+A groundbreaking discovery in neutrino physics came in 1998 when the Super-Kamiokande collaboration and later the SNO
+collaboration in 2001 confirmed the existence of neutrino flavor oscillations. This phenomenon consists in the fact that
+as neutrinos propagate over varying distances and energies, their flavor can periodically change. Its discovery established that neutrinos do indeed possess mass, and their lepton flavors can mix.
+Unlike heavy charged leptons and quarks, which quickly decay or hadronize, neutrinos 
+can traverse long distances. This property allows to observe neutrino flavor oscillations, which are a
+consequence not only of finite masses but also of a difference between the three mass eigenstates $\nu_{1,2,3}$ and the
+flavor states $\nu_{e,\mu,\tau}$. 
+The mixing between these states is described by a non-trivial Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix, akin to the
+Cabibbo-Kobayashi-Maskawa (CKM) matrix in the quark sector. The PMNS matrix can be parameterized in terms of three
+mixing angles, denoted as $\theta_{ij}$, and one CP-violating phase $\delta_{CP}$:
+\begin{equation}
+U_{PMNS} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & c_{23} & s_{23} \\
+0 & -s_{23} & c_{23}
+\end{pmatrix}
+\begin{pmatrix}
+c_{13} & 0 & s_{13}e^{-i\delta_{CP}} \\
+0 & 1 & 0 \\
+-s_{13}e^{i\delta_{CP}} & 0 & c_{13}
+\end{pmatrix}
+\begin{pmatrix}
+c_{12} & s_{12} & 0 \\
+-s_{12} & c_{12} & 0 \\
+0 & 0 & 1
+\end{pmatrix},
+\end{equation}
+
+Where $c_{ij} = \cos\theta_{ij}$ and $s_{ij} = \sin\theta_{ij}$. Additionally, if neutrinos are their own antiparticles,
+a property denoted as being a Majorana fermion, two more phases may exist, but they cannot be measured through
+oscillation experiments. For a neutrino created in a flavor state $\alpha$, the probability $P(\nu_\alpha \rightarrow
+\nu_\beta)$ of detecting it in a flavor state $\beta$ after traveling through vacuum is described by the following equation:
+
+\begin{eqnarray}
+      P({\nu_\alpha \rightarrow\nu_\beta}) = \delta_{\alpha\beta} - 4\sum_{j > i}\mathrm{Re}\left(U_{\alpha j}^*\,U_{\beta j}\,
+      U_{\alpha i}\,U_{\beta i}^*\right)\sin^2\left(\frac{\Delta m^2_{ji}\,L}{4E}\right) \\ 
+      + 2\sum_{j > i}\mathrm{Im}
+      \left(U_{\alpha j}^*\,U_{\beta j}\,U_{\alpha i}\,U_{\beta i}^*\right)\sin\left(\frac{\Delta m^2_{ji}\,L}{2E}
+      \right) \nonumber
+\end{eqnarray}
+Here, $E$ is the neutrino energy, $L$ is the source-detector distance, and $\Delta m^2_{ji} = m_j^2 - m_i^2$. The
+second term is responsible for CP violation and is present only if $\delta_{CP}\neq 0$.
+
+Neutrino oscillations are studied using both terrestrial and astrophysical sources, and the accessible
+oscillation channels depend on the energy spectrum of the neutrinos. For instance, oscillations primarily due to the
+$\theta_{23}$ angle were first observed in atmospheric neutrinos, produced in
+cosmic-ray interactions in the Earth's atmosphere. On the other hand, solar neutrinos, generated in the core of the Sun through fusion processes, have been crucial for
+constraining $\theta_{12}$ and $\Delta m^2_{21}$. 
+Because of this, the mixing angles $\theta_{23}$ and $\theta_{12}$ and the corresponding square mass differences are
+commonly referred to as describing atmospheric and solar neutrino oscillations, respectively. The remaining relatively small mixing angle $\theta_{13}$ approximately decouples atmospheric and solar oscillations. 
+Reactor neutrinos, produced in the cores of nuclear reactors, have provided precise measurements of $\theta_{13}$,
+$\theta_{12}$, and $|\Delta m^2_{31}|$. Finally, accelerator neutrino beams have been employed to constrain various mixing
+parameters, depending on the selected beam. Global analyses combining data from various sources have
+been used to determine the values of all mixing angles and $\Delta m^2_{21}$, while the CP-violating phase $\delta_{CP}$ and the sign of $\Delta m^2_{31}$ remain undetermined.
+This unknown sign means that there are two pssible ways to order the mass states, a problem that is known as the
+neutrino mass hierarchy problem. 
+In the first configuration, known as the Normal Ordering (NO), the two lightest neutrino mass
+eigenstates exhibit a minimal mass difference, approximately on the order of 10 meV, while the third eigenstate
+possesses a mass roughly 50 meV higher. In the Inverted Ordering (IO), the lightest neutrino mass eigenstate is
+succeeded by a doublet of higher mass eigenstates, with a small mass difference within the doublet. Current experimental
+data exhibit a slight preference for the Normal Ordering.
+
+
+The masses of neutrinos are remarkably smaller, at least five orders of magnitude, than those of any other fermions in
+the Standard Model. This significant disparity hints at the possibility of a distinct mechanism responsible for
+generating them. Due to oscillations only depending on the difference between neutrino masses, their observation can only provide a lower
+bound on the absolute neutrino mass scale. A direct measurement of this parameter may not only shed light on many open problems,
+such as the question of mass hierarchy, but also offer new insights into the fundamental question of how these particles acquire
+mass. Moreover, neutrinos play a pivotal role in shaping the evolution of the cosmos on
+a large scale, and a direct measurement of the neutrino mass could thus serve as a crucial input for models describing the formation of cosmological structures.
+

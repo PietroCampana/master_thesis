@@ -1,0 +1,48 @@
+\chapter*{Conclusions}
+Using arrays of Transition Edge Sensors, the Holmes experiment has succesfully measured the calorimetric EC decay
+spectrum of $^{163}$Ho, paving the way towards its first measurement of the electronic neutrino mass.
+In order to support the upcoming experimental efforts, this thesis presented two Bayesian data analysis
+applications focused on different parts of the energy spectrum measured by Holmes.
+
+The first analysis involved a preliminary study of the M1 peak aimed at characterizing its position and width from
+experimental data. An approximate form of the spectrum was used in the fit, considering only a Lorentzian and
+first-order polynomial multiplied with a fixed phase-space and convolved with a Gaussian experimental response. After
+assessing the robustness of the basic model, Bayesian model comparison was applied in order to select an alternative
+peak profile describing a small asymmetry in the measured lineshape, with the results favoring an energy-dependent width.
+
+One of the main challenges of the data analysis for Holmes consists in accurately considering the data from many
+detectors with different systematics. In the characterization of the peak, the main obstacle to the determination of
+\(E_{M1}\) is the systematic introduced by energy calibration, which results in a different acquired spectrum for
+each TES. Considering the calibration systematic of each detector as an overall shift \(\delta E\) in the measured
+energy, and assuming that the distribution of \(\delta E\) is dispersed around 0, a global fit on the data acquired by
+16 detectors was performed by constructing a hierarchical model that allowed estimating all \(\delta E\)s and the
+parameters of the peak at the same time. The outcome is a preliminary estimate of \(E_{M1} = 2043.1 \pm 1.8\) eV and
+\(\Gamma_{M1} = 13.8 \pm 0.1\) eV, with both values being within $2\sigma$ from previous experimental results
+by the Echo collaboration. Moreover, a small but nonzero asymmetry \(\alpha = -9.8 \times 10^{-3} \pm 0.6 \times 10^{-3}\) was found, hinting at the possibility of unresolved higher-order peaks at energies lower than \(E_{M1}\).
+
+%Finally, a mean energy resolution of \(FWHM = 7.5 \pm 1.2\) eV and a dispersion in energy calibration of \(\sigma_{E} = 7.1 \pm 1.3\) eV were measured in the global fit.
+
+The second part of the data analysis instead focused on the endpoint region, with the aim of providing an estimate of the upper limit on \(m_{\nu_{e}}\) which could be achieved by the current setup of Holmes in the near future. Considering the current energy resolution and expected background fraction, this analysis focused on a three months measurement involving 64 detectors implanted with 1 Bq of \(^{163}\)Ho each.
+
+The data was obtained from a Monte Carlo simulation of the first order spectrum, initially considering all of the detectors to be identical and
+fitting only their combined spectrum. This allowed establishing a basic model involving a small number of parameters
+and testing its robustness with methods such as Simulation-Based-Calibration and prior sensitivity analysis. The latter
+revealed that, for the low available statistics, the fit does not affect the energy resolution parameter \(FWHM\),
+which can be set to a fixed reasonable estimate without altering the posterior for \(m_{\nu_{e}}\).
+
+Having assessed the robustness to the priors, it was observed that fluctuations in the data could produce varying
+estimates of \(m_{\nu_{e}}\). This required constructing a "robust posterior" by repeatedly generating new data,
+refitting the model, and combining all the resulting samples. While simple, this method allowed obtaining more conservative estimates that consider the additional variability of the data.
+
+To provide a more realistic limit, a more complex dataset involving 64 different detectors was simulated, varying normally their activity, energy
+resolution, and calibration systematics within their observed ranges. The resulting data was fitted with a large model
+constructed by extending the basic model to consider separate spectra from different detectors and employing the same hierarchical
+approach used in the peak characterization to introduce the calibration systematics. Due to the low number of events in
+each detector, the global fit is not able to obtain estimates of the detector-specific
+systematics significantly different from their priors, and the resulting limit on \(m_{\nu_{e}}\) is sligthly worse than that obtained by fitting the combined different spectra with the basic model.
+
+Finally, the basic model was repeatedly used to fit the compound spectrum of different detectors, and the resulting robust posterior was compared to that obtained from identical detectors.
+While the penalty induced by neglecting the varying systematics doesn't worsen the upper limit on \(m_{\nu_{e}}\)
+significantly, this result has only been proved under the assumption of normally distributed features between the
+detectors, which could differ significantly from the experimental observations of the upcoming measurements. With these
+considerations in mind, this analysis establishes $m_{\nu_{e}} \le 35$ eV at 90\% credibility level as a possible target for Holmes' sensitivity to the neutrino mass in the near future.

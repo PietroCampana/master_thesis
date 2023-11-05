@@ -1,0 +1,55 @@
+\input{init.tex}
+\usepackage{hyperref}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+\setlength\parindent{0pt}
+\begin{document}
+\input{titlepage.tex}
+\begin{spacing}{1}
+\pagenumbering{gobble}
+\afterpage{\blankpage}
+\input{chapters/abstract}
+\tableofcontents
+\end{spacing}
+%\addcontentsline{toc}{chapter}{Introduction}
+\thispagestyle{empty}
+\pagenumbering{arabic}
+%\input{chapters/introduction}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{#1}}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[RE]{\thesection \ --\ \leftmark}
+\fancyhead[LO]{\thesection \ --\ \leftmark}
+\fancyhead[RO]{\thepage}
+\fancyhead[LE]{\thepage}
+
+\setcounter{page}{0}
+\input{chapters/chapter1}
+\newpage
+\thispagestyle{empty}
+\input{chapters/chapter2}
+\newpage
+\thispagestyle{empty}
+\input{chapters/chapter3}
+\newpage
+\thispagestyle{empty}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{Conclusions}
+\fancyhead[LE]{\thepage}
+\fancyhead[RE]{Conclusions}
+\input{chapters/conclusions}
+\addcontentsline{toc}{chapter}{Conclusions}
+
+\newpage
+\bibliographystyle{unsrt}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{Bibliography}
+\fancyhead[LE]{\thepage}
+\fancyhead[RE]{Bibliography}
+\bibliography{bibliography/ch1,bibliography/ch2,bibliography/ch3}
+\end{document}
